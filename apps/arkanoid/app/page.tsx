@@ -1,3 +1,5 @@
+import { Arkanoid } from '../components/arkanoid';
+
 export default function Page() {
-  return <h1>Arkanoid</h1>;
+  return <Arkanoid />;
 }
