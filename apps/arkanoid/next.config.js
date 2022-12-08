@@ -14,6 +14,13 @@ const nextConfig = {
   },
   experimental: {
     appDir: true,
+    esmExternals: 'loose',
+  },
+  webpack: (config) => {
+    config.externals = {
+      canvas: 'canvas',
+    };
+    return config;
   },
 };
 
